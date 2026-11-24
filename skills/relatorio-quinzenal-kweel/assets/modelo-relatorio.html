@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Clínica Exemplo · Resultados & Estratégia</title>
+<!-- Modelo com dados FICTÍCIOS. Substitua conteúdo, cliente e logo. -->
+<style>
+  @page { size: A4; margin: 22mm 18mm 20mm 18mm; }
+  :root { --txt:#2d2d2d; --roxo:#8a6d9e; --roxo-esc:#5e4a6e; --bege:#f5f1e6; }
+  * { box-sizing: border-box; }
+  body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: var(--txt); font-size: 11pt; line-height: 1.5; margin: 0; }
+  h1, h2, h3 { color: var(--roxo); margin: 0 0 8px; }
+  h2 { font-size: 15pt; margin-top: 26px; border-bottom: 1px solid #e3dcea; padding-bottom: 4px; }
+  h3 { font-size: 12pt; color: var(--txt); margin-top: 16px; }
+  p { margin: 0 0 10px; }
+
+  /* Capa */
+  .capa { height: 245mm; display: flex; flex-direction: column; padding-top: 60mm; page-break-after: always; }
+  .capa .logo { width: 64px; height: 64px; margin-bottom: 40px; }
+  .capa .logo-txt { font-size: 13pt; letter-spacing: 4px; color: var(--roxo); font-weight: 700; margin-bottom: 40px; }
+  .capa .cliente { font-size: 30pt; font-weight: 800; color: var(--roxo); text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
+  .capa .titulo { font-size: 18pt; margin-top: 10px; }
+  .capa .periodo { font-style: italic; margin-top: 6px; color: #6b6b6b; }
+  .capa .assinatura { margin-top: auto; font-size: 9pt; color: #6b6b6b; }
+
+  .consolida { background: var(--bege); border-left: 4px solid var(--roxo); padding: 14px 18px; margin: 0 0 20px; }
+  .consolida strong { color: var(--roxo); }
+  .consolida ul { margin: 6px 0 0; padding-left: 18px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0 16px; }
+  .kpi { background: var(--bege); border-radius: 8px; padding: 12px; page-break-inside: avoid; }
+  .kpi .rot { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .5px; color: #6b6b6b; }
+  .kpi .val { font-size: 18pt; font-weight: 800; color: var(--roxo); margin: 2px 0; }
+  .kpi .var { font-size: 8.5pt; }
+
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 10pt; page-break-inside: avoid; }
+  th { background: var(--roxo-esc); color: #fff; text-align: left; padding: 7px 9px; font-weight: 600; }
+  td { padding: 7px 9px; border-bottom: 1px solid #ece6f1; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.total td { font-weight: 700; background: var(--bege); }
+
+  .frente { border: 1px solid #ece6f1; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; page-break-inside: avoid; }
+  .frente .tag { display: inline-block; font-size: 8pt; background: var(--roxo); color: #fff; border-radius: 4px; padding: 1px 7px; margin-bottom: 6px; }
+  .perguntas li { margin-bottom: 6px; }
+  .nota { font-size: 9pt; color: #6b6b6b; }
+</style>
+</head>
+<body>
+
+<section class="capa">
+  <!-- Troque pelo logo da pena: <img class="logo" src="logo-kweel.svg"> -->
+  <div class="logo-txt">KWEEL</div>
+  <div class="cliente">Clínica Exemplo</div>
+  <div class="titulo">Resultados &amp; Estratégia</div>
+  <div class="periodo">1ª quinzena de novembro de 2026 (01 a 15/11)</div>
+  <div class="assinatura">Agência Kweel</div>
+</section>
+
+<div class="consolida">
+  <strong>Este documento consolida:</strong>
+  <ul>
+    <li>Os resultados de Google Ads e Meta Ads na quinzena, comparados à quinzena anterior</li>
+    <li>A origem dos pacientes: o que veio da mídia e o que já era da clínica</li>
+    <li>As frentes de otimização implementadas e o efeito esperado de cada uma</li>
+    <li>Os próximos passos e as perguntas para alinharmos na call</li>
+  </ul>
+</div>
+
+<h2>Resumo executivo</h2>
+<div class="kpis">
+  <div class="kpi"><div class="rot">Investimento</div><div class="val">R$ 4.180</div><div class="var">+6% vs. quinzena anterior</div></div>
+  <div class="kpi"><div class="rot">Leads reais</div><div class="val">286</div><div class="var">+14%</div></div>
+  <div class="kpi"><div class="rot">CPL Real</div><div class="val">R$ 14,62</div><div class="var">−7% (meta ≤ R$ 15)</div></div>
+  <div class="kpi"><div class="rot">Agendamentos</div><div class="val">97</div><div class="var">+11%</div></div>
+</div>
+<p>A quinzena fechou com <strong>CPL Real de R$ 14,62</strong>, dentro da meta, e com mais agendamentos que o período anterior gastando praticamente o mesmo.</p>
+<p>O Google segue como principal fonte de agendamento. O Meta ganhou eficiência depois da renovação dos criativos.</p>
+<p class="nota">CPL Real = investimento total ÷ leads que de fato entraram no atendimento (conversas do Meta + agendamentos do Google, sem duplicidade).</p>
+
+<h2>1. Resultados do período</h2>
+<table>
+  <tr><th>Plataforma</th><th class="n">Investimento</th><th class="n">Leads</th><th class="n">CPL</th><th class="n">Agendamentos</th></tr>
+  <tr><td>Google Ads</td><td class="n">R$ 2.640</td><td class="n">118</td><td class="n">R$ 22,37</td><td class="n">71</td></tr>
+  <tr><td>Meta Ads</td><td class="n">R$ 1.540</td><td class="n">168</td><td class="n">R$ 9,17</td><td class="n">26</td></tr>
+  <tr class="total"><td>Total</td><td class="n">R$ 4.180</td><td class="n">286</td><td class="n">R$ 14,62</td><td class="n">97</td></tr>
+</table>
+
+<h2>2. Origem dos pacientes</h2>
+<table>
+  <tr><th>Origem</th><th class="n">Agendamentos</th><th class="n">% do total</th></tr>
+  <tr><td>Pacientes novos vindos da mídia</td><td class="n">74</td><td class="n">76%</td></tr>
+  <tr><td>Pacientes da casa (retorno, busca pelo nome)</td><td class="n">23</td><td class="n">24%</td></tr>
+</table>
+<p class="nota">Os pacientes da casa aparecem separados porque já procurariam a clínica sem anúncio. O mérito da campanha é medido sobre os pacientes novos.</p>
+
+<h2>3. Frentes de otimização</h2>
+<div class="frente"><span class="tag">Implementado</span>
+  <h3>Campanhas de pesquisa organizadas por especialidade</h3>
+  <p>Cada especialidade ganhou grupo e anúncio próprios. Efeito esperado: anúncio mais relevante para cada busca e custo por agendamento menor nas próximas duas semanas.</p>
+</div>
+<div class="frente"><span class="tag">Implementado</span>
+  <h3>Novos criativos com o profissional</h3>
+  <p>Entraram três peças com o médico explicando o atendimento. Efeito esperado: mais conversas por real investido no Meta.</p>
+</div>
+
+<h2>4. Próximos passos</h2>
+<table>
+  <tr><th>Ação</th><th>Quando</th><th>Responsável</th></tr>
+  <tr><td>Avaliar o efeito da nova estrutura de pesquisa</td><td>30/11</td><td>Kweel</td></tr>
+  <tr><td>Enviar fotos atualizadas do consultório</td><td>22/11</td><td>Clínica</td></tr>
+</table>
+
+<h2>5. Perguntas para a call</h2>
+<ol class="perguntas">
+  <li>Das 168 conversas do Meta, 26 viraram agendamento. Hoje, em quanto tempo a equipe costuma responder no WhatsApp?</li>
+  <li>A agenda da próxima quinzena tem espaço para um volume maior de primeiras consultas?</li>
+</ol>
+
+</body>
+</html>

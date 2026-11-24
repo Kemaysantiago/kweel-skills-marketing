@@ -4,7 +4,7 @@
 
 Skills de marketing para a operação da Kweel: anúncios, criativos, copy, CRO, rastreamento de conversão, SEO, e-mail, oferta e pesquisa de concorrência.
 
-Curadoria de 35 skills tiradas de repositórios abertos e bem avaliados. Cada pasta em `skills/` segue o formato padrão (`SKILL.md` + arquivos de apoio) e funciona com Claude Code, Claude (app), Codex e Cursor.
+São 39 skills: **4 autorais da Kweel**, criadas a partir da nossa operação com clínicas, e 35 de curadoria, tiradas de repositórios abertos e bem avaliados. Cada pasta em `skills/` segue o formato padrão (`SKILL.md` + arquivos de apoio) e funciona com Claude Code, Claude (app), Codex e Cursor.
 
 ## Como usar
 
@@ -16,7 +16,18 @@ Curadoria de 35 skills tiradas de repositórios abertos e bem avaliados. Cada pa
 
 Depois é só pedir a tarefa normalmente; o agente carrega a skill certa pela descrição. Também dá para chamar pelo nome, por exemplo: "use a skill `product-marketing`".
 
-## Skills
+## Skills autorais da Kweel
+
+Escritas pela Agência Kweel a partir da rotina real com clínicas de saúde, estética e odontologia.
+
+| Skill | Para que serve |
+|---|---|
+| `auditoria-meta-clinica` | Auditar uma conta de Meta Ads de clínica: rastreamento, estrutura, criativos, políticas de saúde e o caminho conversa → agendamento |
+| `relatorio-quinzenal-kweel` | Montar o relatório de resultados para o cliente em PDF, no padrão visual e de comunicação da Kweel (com modelo HTML e script de geração) |
+| `followup-crm-clinica` | Montar a régua de follow-up de leads e pacientes: primeiro contato, recuperação, confirmação, no-show, recall e reativação |
+| `nomenclatura-campanhas-kweel` | Nomear campanhas, grupos e anúncios e montar UTMs no padrão Kweel (com script que gera e valida os nomes) |
+
+## Skills de curadoria
 
 | Skill | Quando usar (descrição original) | Origem |
 |---|---|---|
@@ -58,9 +69,10 @@ Depois é só pedir a tarefa normalmente; o agente carrega a skill certa pela de
 
 ## Origem e licenças
 
+- **Agência Kweel** — as 4 skills autorais acima, licença MIT (ver `LICENSES/MIT-Kweel.txt`)
 - [anthropics/skills](https://github.com/anthropics/skills) — licença Apache-2.0, cópia em `LICENSES/Apache-2.0-anthropics.txt`
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — licença MIT, cópia em `LICENSES/MIT-coreyhaines31.txt`
 
-As skills foram copiadas sem alterações de conteúdo, salvo o indicado abaixo. Os direitos continuam dos autores originais. Nenhuma alteração.
+As skills de curadoria foram copiadas sem alterações de conteúdo, salvo o indicado abaixo. Os direitos continuam dos autores originais. Nenhuma alteração.
 
 Para atualizar: compare com o repositório de origem e substitua a pasta da skill.
